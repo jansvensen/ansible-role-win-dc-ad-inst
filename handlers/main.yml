@@ -1,2 +1,5 @@
 ---
 # handlers file for ansible-role-win-dc-ad-inst
+- name: Perform reboot
+  ansible.builtin.reboot:
+    post_reboot_delay: 30
