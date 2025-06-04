@@ -9,7 +9,7 @@
   register: win_feature
 
 - name: Reboot host and wait for it to restart
-  reboot:
+  win_reboot:
     msg: "Reboot initiated by Ansible"
     connect_timeout: 5
     reboot_timeout: 600
